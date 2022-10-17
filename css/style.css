@@ -10,6 +10,7 @@ body {
 h1{
     text-align: center;
 }
+/*-- Nav 1 --*/
 .nav1{
    background:lightskyblue;
    padding: .5em .5em;
@@ -34,6 +35,7 @@ h1{
 .links a:hover {
     color: navy;
 }
+/*-- Nav 2 --*/
 .nav2{
     background:red;
     padding: .5em .5em;
@@ -66,6 +68,7 @@ h1{
 .links-b a:hover{
     color: navy;
 }
+/*-- Buttons --*/
 .button-box{
     margin: auto;
     max-width:800px;
@@ -77,6 +80,7 @@ h1{
     margin: auto;
     position: relative;
 }
+/*-- Button 1 --*/
 .btn {  
     font-family: Arial, Helvetica, sans-serif;  
     text-transform: uppercase;
@@ -105,6 +109,7 @@ h1{
     border-color: rgb(2, 225, 254);  
     background: rgb(51, 51, 51);
 }  
+/*-- Button 2 --*/
 .btn {  
     font-family: Arial, Helvetica, sans-serif;  
     text-transform: uppercase;
@@ -132,10 +137,11 @@ h1{
     box-shadow: rgb(51, 51, 51) 0px 0px 0px 0px;
 }  
 .btn-shadow-drop--black {  
-    border: 1px solid rgb(246, 246, 249);  
+    border: 1px solid rgb(250, 250, 250);  
     color: rgb(250, 250, 250);  
     box-shadow: rgb(247, 78, 6) 4px 4px 0px 0px;
 }  
+/*-- Button 3 --*/
 .switch {
     position: relative;
     display: inline-block;
@@ -190,6 +196,7 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+/*-- Button 4 --*/
 .btn {  
     font-family: Arial, Helvetica, sans-serif;  
     text-transform: uppercase;
@@ -220,12 +227,17 @@ input:checked + .slider:before {
     opacity: 1;  
     transform: translateZ(0px);
 }  
+/*-- Typography --*/
 .typography{
     display: flex;
+    justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 1rem;
+    text-align: center;
+
 }
+/*-- Neon Text --*/
 .neon{
     color: rgb(6, 249, 35);
     text-shadow:    
@@ -237,4 +249,68 @@ input:checked + .slider:before {
     0 0 92px #0fa,
     0 0 102px #0fa,
     0 0 151px #0fa;
+    background: black;
+    padding: 1rem;
+    font-size: 40px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #f2abfe;
+  --color-secondary: #f05efd;
+  --color-tertiary: #fd32e8;
+  --color-quaternary: #fd13da;
+  --color-quinary: #b10798;
+}
+/*-- 3D Text --*/
+.threed {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-left: 1rem;
+}
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  color: transparent;
+  background-color: white;
+  background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+  font-size: 60px;
+}
+/*-- Gradient Text --*/
+.gradient {
+    padding-left: 3rem;
+    position: inherit;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #0317f9, #0497f9, #02f6bd, #acfa03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*-- Fancy --*/
+.fancy {
+    padding-left: 3rem;
+    position: inherit;
+}
+.heading {
+    font-family: cursive;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.text {
+    font-weight: lighter;
+    font-size: 25x;
 }
