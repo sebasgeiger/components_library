@@ -314,3 +314,59 @@ input:checked + .slider:before {
     font-weight: lighter;
     font-size: 25x;
 }
+/*--Media Cards--*/
+.mcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    text-align: center; 
+}
+/*--Card 1--*/
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+.card__cover {
+    height: 10rem;
+    background-color: gray;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border: solid black;
+}
+.card__content {
+    /* Take available height */
+    flex: 1;
+    text-align: center;
+    border: solid black;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.title {
+    font-weight: Bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:larger;
+}
+.card2 {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    height: 100%;
+    border: solid black;
+    text-align:left;
+    border-radius: 10px;
+}
+.cover {
+    height: 6rem;
+    width: 12rem;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    align-items: center;
+    background-color: gray;
+    border: solid black;
+    border-radius: 50%;
+}
