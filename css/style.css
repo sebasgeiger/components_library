@@ -72,7 +72,7 @@ h1{
 /*-- Buttons --*/
 .button-box{
     margin: auto;
-    max-width:800px;
+    max-width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -121,8 +121,7 @@ h1{
     margin-left: 65px;
 }  
 .btn-shadow-drop {  
-    position: relative;  
-    margin-top: 10%;  
+    position: relative;    
     background: rgb(18, 6, 125);  
     padding: 20px;  
     font-size: 0.9em;  
@@ -209,8 +208,9 @@ input:checked + .slider:before {
 }  
 .btn-background-slide {  
     width: 180px;  
-    padding: 6px;  
+    padding: 6px; 
     height: 50px;  
+    margin-top: 2.5rem;
     color: rgb(252, 252, 252);  
     text-align: center;  
     position: relative;  
